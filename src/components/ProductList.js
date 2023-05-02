@@ -15,6 +15,6 @@ export default function ProductList(props) {
       );
     })
   ) : (
-    <h1>No Prodects Exist in the Carts</h1>
+    <h1>No Products Exist in the Carts</h1>
   );
 }
