@@ -4,7 +4,7 @@ class AddItem extends React.Component {
     super(props);
     this.state = {
       productName: "",
-      productPrice:0
+      productPrice: 0,
     };
   }
   state = {};
@@ -29,8 +29,9 @@ class AddItem extends React.Component {
             className="form-control"
             id="inputName"
             aria-describedby="Name"
-            name="productName" onChange={(e)=>{
-                this.setState({productName:e.currentTarget.value})
+            name="productName"
+            onChange={(e) => {
+              this.setState({ productName: e.currentTarget.value });
             }}
             value={this.state.productName}
           />
@@ -43,15 +44,14 @@ class AddItem extends React.Component {
             type="number"
             className="form-control"
             id="inputPrice"
-            name="productPrice" onChange={(e)=>{
-                this.setState({productPrice:e.currentTarget.value})
+            name="productPrice"
+            onChange={(e) => {
+              this.setState({ productPrice: e.currentTarget.value });
             }}
             value={this.state.productPrice}
           />
         </div>
-        <button type="submit" className="btn btn-primary col-2" onClick={()=>{
-            this.props.addItem();
-        }}>
+        <button type="submit" className="btn btn-primary col-2">
           Add
         </button>
       </form>
